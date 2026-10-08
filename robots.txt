@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rollandss.github.io/sitemap.xml

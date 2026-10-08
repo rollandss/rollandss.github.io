@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Artem Makarenko — full-stack developer</title>
+<meta name="description" content="Full-stack developer from Ukraine. Next.js and TypeScript products in production: price monitoring SaaS, store accounting, testing platform and more.">
+<link rel="canonical" href="https://rollandss.github.io/">
+<link rel="alternate" hreflang="en" href="https://rollandss.github.io/">
+<link rel="alternate" hreflang="uk" href="https://rollandss.github.io/uk/">
+<link rel="alternate" hreflang="x-default" href="https://rollandss.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Artem Makarenko — full-stack developer">
+<meta property="og:description" content="Full-stack developer from Ukraine. Next.js and TypeScript products in production: price monitoring SaaS, store accounting, testing platform and more.">
+<meta property="og:url" content="https://rollandss.github.io/">
+<meta property="og:image" content="https://rollandss.github.io/assets/screenshots/pricecortex.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Unbounded:wght@500;700&display=swap&subset=cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#work">Skip to projects</a>
+<header class="wrap top">
+  <nav class="bar">
+    <a class="handle" href="https://github.com/rollandss" rel="me">github.com/rollandss</a>
+    <a class="lang" href="uk/" hreflang="uk" lang="uk">Українською</a>
+  </nav>
+  <h1>Artem Makarenko</h1>
+  <p class="role">Full-stack developer · Next.js, TypeScript, Postgres</p>
+  <p class="lead">I build web products that businesses use every day: price monitoring for marketplace sellers, payroll and accounting for a chain of stores, a testing platform. I take them from idea to production, including the server side, automation and self-hosted infrastructure.</p>
+</header>
+<main id="work">
+  <section class="wrap">
+    <h2>Products in production</h2>
+    <p class="intro">Every screenshot is taken from the real deployed app, not a mockup.</p>
+    
+      <article class="project" id="pricecortex">
+        <figure class="shot"><picture><source srcset="assets/screenshots/pricecortex.webp" type="image/webp"><img src="assets/screenshots/pricecortex.jpg" width="768" height="560" alt="PriceCortex screenshot" fetchpriority="high" decoding="async"></picture><figcaption>www.pricecortex.com</figcaption></figure>
+        <div class="body">
+          <h3>PriceCortex</h3>
+          <p class="what">B2B SaaS that tracks competitor prices on Rozetka and Prom.ua for online sellers.</p>
+          <ul class="points"><li>Daily price collection runs in n8n with FlareSolverr on a Hetzner server</li><li>Dumping alerts, pricing rules and auto-repricing through the marketplace Seller API</li><li>AI-assisted matching of analog products; seller API credentials encrypted with AES-256-GCM</li><li>Team roles, paid plans via LiqPay, 24 test files covering pricing and repricing logic</li></ul>
+          
+          <p class="stack"><span>Stack:</span> Next.js 16, React 19, Tailwind 4, shadcn/ui, Neon Postgres, NextAuth v5, n8n, OpenAI, LiqPay, Vitest</p>
+          <div class="links"><a class="btn btn-primary" href="https://www.pricecortex.com" target="_blank" rel="noopener">Open live</a><span class="private">Private repo, code on request</span></div>
+        </div>
+      </article>
+      <article class="project" id="oblik-stores">
+        <figure class="shot"><picture><source srcset="assets/screenshots/oblik-stores.webp" type="image/webp"><img src="assets/screenshots/oblik-stores.jpg" width="768" height="560" alt="Oblik Stores screenshot" loading="lazy" decoding="async"></picture><figcaption>oblik-stores.vercel.app</figcaption></figure>
+        <div class="body">
+          <h3>Oblik Stores</h3>
+          <p class="what">Accounting app for a chain of wine stores: payroll, cash income and staff schedules.</p>
+          <ul class="points"><li>Each employee&#x27;s pay is calculated from their shift schedule, rate and bonuses</li><li>Month closing, change log with restore, automatic backups by email</li><li>Payroll sheets and statistics export to Excel; store expenses can be added from a Telegram bot</li><li>Tests run during the Vercel build, so a broken calculation never reaches production</li></ul>
+          <p class="note">Internal tool with real business data, so the screenshot shows only the sign-in page.</p>
+          <p class="stack"><span>Stack:</span> Next.js 16, Better Auth, Drizzle ORM, Turso, ExcelJS, Resend, Telegram Bot API, Vitest</p>
+          <div class="links"><a class="btn btn-primary" href="https://oblik-stores.vercel.app" target="_blank" rel="noopener">Open live</a><span class="private">Private repo, code on request</span></div>
+        </div>
+      </article>
+      <article class="project" id="tests-system">
+        <figure class="shot"><picture><source srcset="assets/screenshots/tests-system.webp" type="image/webp"><img src="assets/screenshots/tests-system.jpg" width="768" height="560" alt="Tests System screenshot" loading="lazy" decoding="async"></picture><figcaption>tests-system-vert.vercel.app</figcaption></figure>
+        <div class="body">
+          <h3>Tests System</h3>
+          <p class="what">Platform for creating and taking tests, with roles for students, teachers and admins.</p>
+          <ul class="points"><li>Random question selection, autosaved progress and detailed result analysis</li><li>Test import from Word and PDF files</li><li>Top-5 rating, chat rooms and announcements</li><li>Rate limiting, input validation, security headers and error monitoring with Sentry</li></ul>
+          
+          <p class="stack"><span>Stack:</span> Next.js 16, Prisma, Neon Postgres, Upstash Redis, Sentry, Zod, Brutal UI</p>
+          <div class="links"><a class="btn btn-primary" href="https://tests-system-vert.vercel.app" target="_blank" rel="noopener">Open live</a><span class="private">Private repo, code on request</span></div>
+        </div>
+      </article>
+      <article class="project" id="notificator">
+        <figure class="shot"><picture><source srcset="assets/screenshots/notificator.webp" type="image/webp"><img src="assets/screenshots/notificator.jpg" width="768" height="560" alt="Birthday Notificator screenshot" loading="lazy" decoding="async"></picture><figcaption>notificator-lake.vercel.app</figcaption></figure>
+        <div class="body">
+          <h3>Birthday Notificator</h3>
+          <p class="what">Birthday reminders in Telegram and by email, set up once.</p>
+          <ul class="points"><li>Connect a shared bot in one click or plug in your own Telegram bot</li><li>Reminders 1, 3 or 7 days ahead, grouped into one daily digest</li><li>CSV import and export, per-user API keys, each user picks the hour of delivery</li><li>Bot tokens encrypted with AES-256-GCM; repeated cron calls are safe</li></ul>
+          
+          <p class="stack"><span>Stack:</span> Next.js 16, NextAuth v5, Upstash Redis, Resend, Telegram Bot API, react-hook-form</p>
+          <div class="links"><a class="btn btn-primary" href="https://notificator-lake.vercel.app" target="_blank" rel="noopener">Open live</a><span class="private">Private repo, code on request</span></div>
+        </div>
+      </article>
+  </section>
+  <section class="wrap">
+    <h2>Smaller projects</h2>
+    <div class="grid">
+      <article class="mini" id="brutal-ui">
+        <figure class="shot"><picture><source srcset="assets/screenshots/brutal-ui.webp" type="image/webp"><img src="assets/screenshots/brutal-ui.jpg" width="768" height="560" alt="Brutal UI screenshot" loading="lazy" decoding="async"></picture></figure>
+        <h3>Brutal UI</h3>
+        <p>Neobrutalist React component library: 39 typed components with a demo site. Used in Tests System.</p>
+        <p class="stack">React, TypeScript, Tailwind CSS, Next.js</p>
+        <div class="links"><a class="btn btn-primary" href="https://brutal-ui-one.vercel.app" target="_blank" rel="noopener">Open live</a><a class="btn" href="https://github.com/rollandss/brutal-ui" target="_blank" rel="noopener">Source code</a></div>
+      </article>
+      <article class="mini" id="training">
+        <figure class="shot"><picture><source srcset="assets/screenshots/training.webp" type="image/webp"><img src="assets/screenshots/training.jpg" width="768" height="560" alt="Stodenka screenshot" loading="lazy" decoding="async"></picture></figure>
+        <h3>Stodenka</h3>
+        <p>100-day pull-up bar program: a short daily post, workout log with sets and reps, and an admin editor for posts.</p>
+        <p class="stack">Next.js 16, Prisma, Postgres, TipTap, jose</p>
+        <div class="links"><a class="btn btn-primary" href="https://training-olive-three.vercel.app" target="_blank" rel="noopener">Open live</a><a class="btn" href="https://github.com/rollandss/training" target="_blank" rel="noopener">Source code</a></div>
+      </article>
+      <article class="mini" id="calendar">
+        <figure class="shot"><picture><source srcset="assets/screenshots/calendar.webp" type="image/webp"><img src="assets/screenshots/calendar.jpg" width="768" height="560" alt="Staff Calendar screenshot" loading="lazy" decoding="async"></picture></figure>
+        <h3>Staff Calendar</h3>
+        <p>First version of the shift calendar for the wine store chain, with notes and PDF export. Later grew into Oblik Stores. Names in the screenshot are replaced.</p>
+        <p class="stack">Next.js, PDF export</p>
+        <div class="links"><span class="private">Private repo, code on request</span></div>
+      </article>
+    </div>
+  </section>
+  <section class="wrap">
+    <h2>What I work with</h2>
+    <dl class="skills"><div><dt>Frontend</dt><dd>React 19, Next.js 16 (App Router, Server Actions), TypeScript, Tailwind CSS, shadcn/ui</dd></div><div><dt>Backend &amp; data</dt><dd>Postgres (Neon), Prisma, Drizzle, Turso/libSQL, Redis (Upstash), Zod</dd></div><div><dt>Auth &amp; payments</dt><dd>NextAuth v5, Better Auth, JWT, LiqPay</dd></div><div><dt>Automation</dt><dd>n8n, Telegram bots, cron jobs, email via Resend</dd></div><div><dt>Infrastructure</dt><dd>Vercel, Hetzner, Docker, Tailscale, Linux (Arch)</dd></div><div><dt>Quality</dt><dd>Vitest, ESLint, Sentry, rate limiting, AES-256-GCM for stored secrets</dd></div></dl>
+  </section>
+  <section class="wrap contact">
+    <h2>Get in touch</h2>
+    <p>The fastest way to reach me is through GitHub.</p>
+    <p><a class="btn btn-primary" href="https://github.com/rollandss" rel="me">github.com/rollandss</a></p>
+  </section>
+</main>
+<footer class="wrap foot"><p>Built as a static page, no frameworks. Screenshots refresh automatically.</p></footer>
+</body>
+</html>

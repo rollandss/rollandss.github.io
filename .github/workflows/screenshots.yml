@@ -1,0 +1,33 @@
+name: Refresh screenshots
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 5 * * 1" # Mondays 05:17 UTC
+
+permissions:
+  contents: write
+
+concurrency:
+  group: screenshots
+  cancel-in-progress: true
+
+jobs:
+  screenshots:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-audit --no-fund
+      - run: npx playwright install --with-deps chromium
+      - run: npm run screenshots
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/screenshots
+          git diff --cached --quiet || git commit -m "chore: refresh project screenshots"
+          git push

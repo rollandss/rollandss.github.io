@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Артем Макаренко — full-stack розробник</title>
+<meta name="description" content="Full-stack розробник з України. Продукти на Next.js і TypeScript у продакшені: SaaS моніторингу цін, облік магазинів, система тестування та інші.">
+<link rel="canonical" href="https://rollandss.github.io/uk/">
+<link rel="alternate" hreflang="en" href="https://rollandss.github.io/">
+<link rel="alternate" hreflang="uk" href="https://rollandss.github.io/uk/">
+<link rel="alternate" hreflang="x-default" href="https://rollandss.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Артем Макаренко — full-stack розробник">
+<meta property="og:description" content="Full-stack розробник з України. Продукти на Next.js і TypeScript у продакшені: SaaS моніторингу цін, облік магазинів, система тестування та інші.">
+<meta property="og:url" content="https://rollandss.github.io/uk/">
+<meta property="og:image" content="https://rollandss.github.io/assets/screenshots/pricecortex.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Unbounded:wght@500;700&display=swap&subset=cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#work">До проєктів</a>
+<header class="wrap top">
+  <nav class="bar">
+    <a class="handle" href="https://github.com/rollandss" rel="me">github.com/rollandss</a>
+    <a class="lang" href="../" hreflang="en" lang="en">English</a>
+  </nav>
+  <h1>Артем Макаренко</h1>
+  <p class="role">Full-stack розробник · Next.js, TypeScript, Postgres</p>
+  <p class="lead">Роблю вебпродукти, якими бізнес користується щодня: моніторинг цін для продавців на маркетплейсах, облік зарплат і приходів для мережі магазинів, систему тестування. Веду їх від ідеї до продакшену, разом із серверною частиною, автоматизацією й власною інфраструктурою.</p>
+</header>
+<main id="work">
+  <section class="wrap">
+    <h2>Продукти в продакшені</h2>
+    <p class="intro">Кожен скріншот знято з реального задеплоєного застосунку, а не з макета.</p>
+    
+      <article class="project" id="pricecortex">
+        <figure class="shot"><picture><source srcset="../assets/screenshots/pricecortex.webp" type="image/webp"><img src="../assets/screenshots/pricecortex.jpg" width="768" height="560" alt="PriceCortex screenshot" fetchpriority="high" decoding="async"></picture><figcaption>www.pricecortex.com</figcaption></figure>
+        <div class="body">
+          <h3>PriceCortex</h3>
+          <p class="what">B2B SaaS, що відстежує ціни конкурентів на Rozetka та Prom.ua для інтернет-продавців.</p>
+          <ul class="points"><li>Щоденний збір цін працює в n8n з FlareSolverr на сервері Hetzner</li><li>Тривоги про демпінг, правила ціноутворення й автоперецінка через Seller API маркетплейсу</li><li>AI-пошук аналогів; доступи до Seller API зашифровані AES-256-GCM</li><li>Ролі в команді, тарифи з оплатою через LiqPay, 24 файли тестів для логіки цін і перецінки</li></ul>
+          
+          <p class="stack"><span>Стек:</span> Next.js 16, React 19, Tailwind 4, shadcn/ui, Neon Postgres, NextAuth v5, n8n, OpenAI, LiqPay, Vitest</p>
+          <div class="links"><a class="btn btn-primary" href="https://www.pricecortex.com" target="_blank" rel="noopener">Відкрити</a><span class="private">Приватний репозиторій, код на запит</span></div>
+        </div>
+      </article>
+      <article class="project" id="oblik-stores">
+        <figure class="shot"><picture><source srcset="../assets/screenshots/oblik-stores.webp" type="image/webp"><img src="../assets/screenshots/oblik-stores.jpg" width="768" height="560" alt="Oblik Stores screenshot" loading="lazy" decoding="async"></picture><figcaption>oblik-stores.vercel.app</figcaption></figure>
+        <div class="body">
+          <h3>Oblik Stores</h3>
+          <p class="what">Облік для мережі винних магазинів: зарплати, приходи коштів і графіки роботи.</p>
+          <ul class="points"><li>Зарплата кожного працівника рахується з графіка змін, ставки й бонусів</li><li>Закриття місяця, журнал змін з відновленням, автоматичні резервні копії на пошту</li><li>Відомості на виплату й статистика в Excel; витрати магазинів можна вносити з Telegram-бота</li><li>Тести запускаються під час збірки на Vercel, тож зламаний розрахунок не потрапить у продакшен</li></ul>
+          <p class="note">Внутрішній інструмент з реальними даними бізнесу, тому на скріншоті лише сторінка входу.</p>
+          <p class="stack"><span>Стек:</span> Next.js 16, Better Auth, Drizzle ORM, Turso, ExcelJS, Resend, Telegram Bot API, Vitest</p>
+          <div class="links"><a class="btn btn-primary" href="https://oblik-stores.vercel.app" target="_blank" rel="noopener">Відкрити</a><span class="private">Приватний репозиторій, код на запит</span></div>
+        </div>
+      </article>
+      <article class="project" id="tests-system">
+        <figure class="shot"><picture><source srcset="../assets/screenshots/tests-system.webp" type="image/webp"><img src="../assets/screenshots/tests-system.jpg" width="768" height="560" alt="Tests System screenshot" loading="lazy" decoding="async"></picture><figcaption>tests-system-vert.vercel.app</figcaption></figure>
+        <div class="body">
+          <h3>Tests System</h3>
+          <p class="what">Платформа для створення й проходження тестів з ролями для учнів, викладачів і адмінів.</p>
+          <ul class="points"><li>Випадковий вибір питань, автозбереження прогресу й детальний аналіз результатів</li><li>Імпорт тестів з файлів Word і PDF</li><li>Рейтинг топ-5, чат-кімнати й оголошення</li><li>Rate limiting, валідація вводу, security-заголовки й моніторинг помилок через Sentry</li></ul>
+          
+          <p class="stack"><span>Стек:</span> Next.js 16, Prisma, Neon Postgres, Upstash Redis, Sentry, Zod, Brutal UI</p>
+          <div class="links"><a class="btn btn-primary" href="https://tests-system-vert.vercel.app" target="_blank" rel="noopener">Відкрити</a><span class="private">Приватний репозиторій, код на запит</span></div>
+        </div>
+      </article>
+      <article class="project" id="notificator">
+        <figure class="shot"><picture><source srcset="../assets/screenshots/notificator.webp" type="image/webp"><img src="../assets/screenshots/notificator.jpg" width="768" height="560" alt="Birthday Notificator screenshot" loading="lazy" decoding="async"></picture><figcaption>notificator-lake.vercel.app</figcaption></figure>
+        <div class="body">
+          <h3>Birthday Notificator</h3>
+          <p class="what">Нагадування про дні народження в Telegram і на email, налаштовані один раз.</p>
+          <ul class="points"><li>Спільний бот підключається одним кліком, або можна додати власного Telegram-бота</li><li>Нагадування за 1, 3 чи 7 днів одним дайджестом на день</li><li>Імпорт і експорт CSV, API-ключі для кожного користувача, вибір години сповіщень</li><li>Токени ботів зашифровані AES-256-GCM; повторні виклики cron безпечні</li></ul>
+          
+          <p class="stack"><span>Стек:</span> Next.js 16, NextAuth v5, Upstash Redis, Resend, Telegram Bot API, react-hook-form</p>
+          <div class="links"><a class="btn btn-primary" href="https://notificator-lake.vercel.app" target="_blank" rel="noopener">Відкрити</a><span class="private">Приватний репозиторій, код на запит</span></div>
+        </div>
+      </article>
+  </section>
+  <section class="wrap">
+    <h2>Менші проєкти</h2>
+    <div class="grid">
+      <article class="mini" id="brutal-ui">
+        <figure class="shot"><picture><source srcset="../assets/screenshots/brutal-ui.webp" type="image/webp"><img src="../assets/screenshots/brutal-ui.jpg" width="768" height="560" alt="Brutal UI screenshot" loading="lazy" decoding="async"></picture></figure>
+        <h3>Brutal UI</h3>
+        <p>Бібліотека React-компонентів у стилі необруталізму: 39 типізованих компонентів і демо-сайт. Використана в Tests System.</p>
+        <p class="stack">React, TypeScript, Tailwind CSS, Next.js</p>
+        <div class="links"><a class="btn btn-primary" href="https://brutal-ui-one.vercel.app" target="_blank" rel="noopener">Відкрити</a><a class="btn" href="https://github.com/rollandss/brutal-ui" target="_blank" rel="noopener">Код</a></div>
+      </article>
+      <article class="mini" id="training">
+        <figure class="shot"><picture><source srcset="../assets/screenshots/training.webp" type="image/webp"><img src="../assets/screenshots/training.jpg" width="768" height="560" alt="Stodenka screenshot" loading="lazy" decoding="async"></picture></figure>
+        <h3>Stodenka</h3>
+        <p>Програма тренувань на турніку на 100 днів: короткий пост на кожен день, лог підходів і повторів, адмінка з редактором постів.</p>
+        <p class="stack">Next.js 16, Prisma, Postgres, TipTap, jose</p>
+        <div class="links"><a class="btn btn-primary" href="https://training-olive-three.vercel.app" target="_blank" rel="noopener">Відкрити</a><a class="btn" href="https://github.com/rollandss/training" target="_blank" rel="noopener">Код</a></div>
+      </article>
+      <article class="mini" id="calendar">
+        <figure class="shot"><picture><source srcset="../assets/screenshots/calendar.webp" type="image/webp"><img src="../assets/screenshots/calendar.jpg" width="768" height="560" alt="Staff Calendar screenshot" loading="lazy" decoding="async"></picture></figure>
+        <h3>Staff Calendar</h3>
+        <p>Перша версія календаря змін для мережі винних магазинів, з нотатками й експортом у PDF. Згодом переросла в Oblik Stores. Імена на скріншоті замінені.</p>
+        <p class="stack">Next.js, PDF export</p>
+        <div class="links"><span class="private">Приватний репозиторій, код на запит</span></div>
+      </article>
+    </div>
+  </section>
+  <section class="wrap">
+    <h2>З чим працюю</h2>
+    <dl class="skills"><div><dt>Фронтенд</dt><dd>React 19, Next.js 16 (App Router, Server Actions), TypeScript, Tailwind CSS, shadcn/ui</dd></div><div><dt>Бекенд і дані</dt><dd>Postgres (Neon), Prisma, Drizzle, Turso/libSQL, Redis (Upstash), Zod</dd></div><div><dt>Авторизація й оплати</dt><dd>NextAuth v5, Better Auth, JWT, LiqPay</dd></div><div><dt>Автоматизація</dt><dd>n8n, Telegram-боти, cron, email через Resend</dd></div><div><dt>Інфраструктура</dt><dd>Vercel, Hetzner, Docker, Tailscale, Linux (Arch)</dd></div><div><dt>Якість</dt><dd>Vitest, ESLint, Sentry, rate limiting, AES-256-GCM для збережених секретів</dd></div></dl>
+  </section>
+  <section class="wrap contact">
+    <h2>Звʼязатися</h2>
+    <p>Найшвидше зі мною можна звʼязатися через GitHub.</p>
+    <p><a class="btn btn-primary" href="https://github.com/rollandss" rel="me">github.com/rollandss</a></p>
+  </section>
+</main>
+<footer class="wrap foot"><p>Статична сторінка без фреймворків. Скріншоти оновлюються автоматично.</p></footer>
+</body>
+</html>
