@@ -13,7 +13,7 @@ const PAGES = {
   "tests-system": "https://tests-system-vert.vercel.app",
   notificator: "https://notificator-lake.vercel.app",
   "brutal-ui": "https://brutal-ui-one.vercel.app",
-  training: "https://training-olive-three.vercel.app",
+  training: "https://stodenka.vercel.app",
 };
 
 // Same 768:560 ratio the HTML reserves for each image, so layout never shifts.
